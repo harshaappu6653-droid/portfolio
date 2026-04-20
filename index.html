@@ -3,30 +3,60 @@
 <head>
 <title>Sri Harsha | BI Developer Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
   margin: 0;
-  background-color: #f5f7fa;
+  background-color: #f4f6f9;
 }
+
 .header {
-  background: #1f3c88;
+  background: linear-gradient(to right, #1f3c88, #4a69bd);
   color: white;
-  padding: 40px;
+  padding: 50px 20px;
   text-align: center;
 }
+
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  margin-bottom: 15px;
+}
+
 .section {
   padding: 30px;
+  max-width: 900px;
+  margin: auto;
 }
+
 .card {
   background: white;
   padding: 20px;
   margin: 20px 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
+
 h2 {
   color: #1f3c88;
+  margin-bottom: 10px;
+}
+
+.project-box {
+  height: 220px;
+  background: #eef2f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #555;
+  font-style: italic;
 }
 </style>
 </head>
@@ -34,15 +64,22 @@ h2 {
 <body>
 
 <div class="header">
+  <img src="profile.jpg" class="profile-pic">
   <h1>Sri Harsha</h1>
-  <p>Business Intelligence Developer</p>
+  <p><b>Business Intelligence Developer</b></p>
   <p>Power BI | Tableau | SQL Server</p>
 </div>
 
 <div class="section">
+
   <h2>About Me</h2>
   <div class="card">
-    <p>I am a Business Intelligence Developer with 4+ years of experience in financial analytics. I specialize in building dashboards that track loan performance, repayment trends, and customer behavior. I have worked with Power BI, Tableau, and SQL Server to deliver insights that support decision-making.</p>
+    <p>
+      Business Intelligence Developer with 4+ years of experience in financial analytics. 
+      Specialized in designing dashboards using Power BI, Tableau, and SQL Server to analyze 
+      loan performance, customer behavior, and operational KPIs. Focused on transforming raw 
+      data into actionable insights that support business decision-making and performance tracking.
+    </p>
   </div>
 
   <h2>Projects</h2>
@@ -50,20 +87,46 @@ h2 {
   <div class="card">
     <h3>Loan Performance Dashboard</h3>
     <p><b>Tools:</b> Power BI, SQL Server</p>
-    <p>Designed a dashboard to analyze loan portfolios, track repayment rates, and identify delinquency trends. Built KPIs using DAX and implemented filters for loan type, region, and time.</p>
+
+    <p><b>Business Problem:</b> Needed to monitor loan portfolio performance and identify risk areas across different regions and loan types.</p>
+
+    <p><b>Solution:</b> Developed KPIs such as repayment rate and delinquency rate using DAX. Built a structured data model using star schema to support filtering across loan type, region, and time dimensions.</p>
+
+    <p><b>Impact:</b> Enabled stakeholders to identify high-risk loan segments and track repayment trends efficiently for improved financial decision-making.</p>
+
+    <div class="project-box">
+      Loan Dashboard Visualization (Power BI)
+    </div>
   </div>
 
   <div class="card">
     <h3>Customer Transaction Analytics</h3>
     <p><b>Tools:</b> Power BI, Tableau</p>
-    <p>Developed a dashboard to analyze customer spending patterns and transaction behavior. Created segmentation logic to identify high-value customers and track monthly trends.</p>
+
+    <p><b>Business Problem:</b> Required analysis of customer spending patterns to identify high-value customers and improve targeting strategies.</p>
+
+    <p><b>Solution:</b> Built dashboards to analyze transaction behavior, implemented segmentation logic to classify customers, and tracked monthly trends.</p>
+
+    <p><b>Impact:</b> Helped business teams understand customer behavior and improve targeting of high-value customer segments.</p>
+
+    <div class="project-box">
+      Customer Analytics Dashboard (Power BI / Tableau)
+    </div>
+  </div>
+
+  <h2>Technical Approach</h2>
+  <div class="card">
+    <p><b>Data Modeling:</b> Designed star schema models with fact and dimension tables</p>
+    <p><b>DAX & Calculations:</b> Created measures such as repayment % and KPI metrics</p>
+    <p><b>Data Validation:</b> Ensured accuracy through reconciliation checks</p>
+    <p><b>Performance Optimization:</b> Improved dashboard performance using optimized queries and data models</p>
   </div>
 
   <h2>Skills</h2>
   <div class="card">
     <p><b>BI Tools:</b> Power BI, Tableau</p>
     <p><b>Database:</b> SQL Server</p>
-    <p><b>Skills:</b> Data Modeling, KPI Development, Dashboard Design, Data Validation</p>
+    <p><b>Core Skills:</b> Data Modeling, KPI Development, Dashboard Design, Data Validation</p>
   </div>
 
   <h2>Contact</h2>
@@ -71,6 +134,7 @@ h2 {
     <p>Email: nannurharsha@gmail.com</p>
     <p>Phone: 913-742-1946</p>
   </div>
+
 </div>
 
 </body>
