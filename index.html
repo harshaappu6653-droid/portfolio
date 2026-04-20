@@ -19,10 +19,11 @@ body {
 }
 
 .profile-pic {
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: top center;
   border: 3px solid white;
   margin-bottom: 15px;
 }
@@ -46,17 +47,8 @@ h2 {
   margin-bottom: 10px;
 }
 
-.project-box {
-  height: 220px;
-  background: #eef2f7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  margin-top: 12px;
-  font-size: 14px;
-  color: #555;
-  font-style: italic;
+ul {
+  margin-top: 8px;
 }
 </style>
 </head>
@@ -94,9 +86,12 @@ h2 {
 
     <p><b>Impact:</b> Enabled stakeholders to identify high-risk loan segments and track repayment trends efficiently for improved financial decision-making.</p>
 
-    <div class="project-box">
-      Loan Dashboard Visualization (Power BI)
-    </div>
+    <p><b>Key Features:</b></p>
+    <ul>
+      <li>Loan repayment and delinquency KPI tracking</li>
+      <li>Dynamic filtering by region, loan type, and time</li>
+      <li>Data modeling using star schema</li>
+    </ul>
   </div>
 
   <div class="card">
@@ -109,9 +104,12 @@ h2 {
 
     <p><b>Impact:</b> Helped business teams understand customer behavior and improve targeting of high-value customer segments.</p>
 
-    <div class="project-box">
-      Customer Analytics Dashboard (Power BI / Tableau)
-    </div>
+    <p><b>Key Features:</b></p>
+    <ul>
+      <li>Customer segmentation based on transaction behavior</li>
+      <li>Monthly spending trend analysis</li>
+      <li>Identification of high-value customers</li>
+    </ul>
   </div>
 
   <h2>Technical Approach</h2>
